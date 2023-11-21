@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ИС Аэропорт(покупка билетов)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <div class="logo">
+                <img src="OGZ_logo_png.png" alt="Логотип">
+            </div>
+        </a>
+        <div class="menu">
+            <span>Для сотрудников</span>
+            <span>Табло рейсов</span>
+            <span>Услуги</span>
+            <div class="dropdown">
+                <div class="dropbtn">Ru</div>
+                <div class="dropdown-content">
+                  <a href="#">Ru</a>
+                  <a href="#">En</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+        <div class="menu">
+            <span>Вылет</span>
+            <span>Прилёт</span>
+            <!--<input type=button value="Show Time" onclick="alert(new Date())">-->
+            <div class="datetime" style="font-size: 26px; display:grid;margin-left:60%;margin-bottom:2%;">
+                <!-- Date -->
+                <span id="date"></span>
+                
+                <!-- Time -->
+                <span id="time">Время</span>
+            </div>
+            <div id="weather" style="font-size: 26px; display:grid;margin-left:60%;margin-bottom:2%;">1</div>
+        </div>
+    </footer>
+    <script language="javascript" type="text/javascript">
+        // Set interval to update date and time every second
+    setInterval(() => {
+      // Get current date and time
+      const date = new Date();
+      
+      // Update date and time spans
+      document.getElementById('date').innerHTML = date.toLocaleDateString();
+      document.getElementById('time').innerHTML = date.toLocaleTimeString();
+    }, 1000);
+    </script>
+</body>
+</html>
