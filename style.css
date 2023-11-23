@@ -1,5 +1,8 @@
 body{
+    height: 100vh;
+    background-position: left top;
     background-image: url("msg-1001603127556-91.jpg");
+    background-repeat: no-repeat;  
     background-size: cover;
     font-family: 'Roboto', sans-serif;
 }
@@ -13,16 +16,25 @@ img{
     height:50px;
 }
 header{
-    margin-top:50px;
-    margin-left:20px;
+    width: 100%;
+    height: 60px;
+    position:sticky;
+    margin:0px;
     display:flex;
+}
+.menu-btn:hover{
+    background-color: blue;
+}
+.menu-btn:hover span{
+    background-color: white;
 }
 .menu{
     display:flex;
-    margin-left:36%;
     margin-top:20px;
     font-size: 20px;
+    margin-left:440px;
 }
+
 .menu span{
     margin-right:90px;
 }
@@ -96,4 +108,29 @@ footer {
 footer .menu{
     font-size: 40px;
     margin-left:10%;
+}
+
+.menu-btn {
+	width: 36px;
+	height: 36px;
+	position: relative;
+	z-index:2;
+	overflow: hidden;
+    background-color: white;
+}
+.menu-btn span {
+	width: 30px;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #222222;
+	transition: all 0.5s;
+}
+.menu-btn span:nth-of-type(2) {
+	top: calc(50% - 5px);
+}
+.menu-btn span:nth-of-type(3) {
+	top: calc(50% + 5px);
 }
