@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ИС Аэропорт(покупка билетов)</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -16,8 +17,8 @@
                 <img src="OGZ_logo_png.png" alt="Логотип">
             </div>
         </a>
-        <div class="menu">
-            <span>Сотрудникам</span>
+        <div class="menu" id="headmenu">
+            <span style="cursor: pointer;" onclick="document.querySelector('.enter').style.display='block';">Сотрудникам</span>
             <span>Рейсы</span>
             <span>Услуги</span>
             <div class="dropdown">
@@ -33,35 +34,98 @@
                 <span></span>
             </div>
         </div>
+        <div class="layout-menu">
+            <div class="position" id="fposition">
+                <div class="dropdown">
+                    <div class="dropbtn">Ru</div>
+                    <div class="dropdown-content">
+                      <a href="#">Ru</a>
+                      <a href="#">En</a>
+                    </div>
+                </div>
+                <a href="index.html">
+                    Закрыть
+                </a>
+            </div>
+            <div class="position">
+                <span style="cursor: pointer;" onclick="document.querySelector('.enter').style.display='block';">Сотрудникам</span>
+            </div>
+            <div class="position">
+                Рейсы
+            </div>
+            <div class="position">
+                Услуги
+            </div>
+            <div class="position">
+                Сезонное расписание
+            </div>
+            <div class="position">
+                Авиакомпании
+            </div>
+            <div class="position">
+                Прибывающим пассажирам
+            </div>
+            <div class="position">
+                Вылетающим пассажирам
+            </div>
+            <div class="position">
+                Пассажирам с ограниченными возможностями
+            </div>
+            <div class="position">
+                Транспорт и парковка
+            </div>
+            <div class="position">
+                Медиацентр
+            </div>
+            <div class="position">
+                Партнёрам
+            </div>
+        </div>
     </header>
     <main>
-
+        <div id="parent_popup" class="enter">
+            <div id="popup">
+              <div class="popup-cross" style="cursor: pointer;" onclick="document.querySelector('.enter').style.display='none';">
+              </div>
+              <h3 style="margin-left:190px;margin-top:10px;font-size: 30px;">Войти</h3>
+              <div class="gamerdata">
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Ввести адрес электронной почты</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Ввести пароль</label>
+                    <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                  </div>
+                  <button type="submit" class="btn btn-success">Войти</button>
+                  <br>
+                  <small>Самостоятельно регистрироваться невозможно. Попросите коллег, у кого есть разрешение добавлять сотрудников в базу данных. Они вам скинут временный пароль, который сможете заменить в личном кабинете.</small>
+                </form>
+              </div>
+            </div>
+          </div>
     </main>
     <footer>
         <div class="menu">
-            <span>Вылет</span>
-            <span>Прилёт</span>
-            <!--<input type=button value="Show Time" onclick="alert(new Date())">-->
-            <div class="datetime" style="font-size: 26px; display:grid;margin-left:60%;margin-bottom:2%">
-                <!-- Date -->
+            <div>
+                <span>Вылет</span>
+                <span style="font-size: 20px;">Вылетающим</span>
+            </div>
+            <div>
+                <span>Прилёт</span>
+                <span style="font-size: 20px;">Прибывающим</span>
+            </div>
+            <div class="datetime" style="font-size: 26px; display:grid;margin-left:60%;margin-bottom:2%;">
                 <span id="date"></span>
-                
-                <!-- Time -->
                 <span id="time">Время</span>
             </div>
-            <div id="weather" style="font-size: 26px; display:grid;margin-left:60%;margin-bottom:2%;"></div>
         </div>
     </footer>
-    <script language="javascript" type="text/javascript">
-        // Set interval to update date and time every second
-    setInterval(() => {
-      // Get current date and time
-      const date = new Date();
-      
-      // Update date and time spans
-      document.getElementById('date').innerHTML = date.toLocaleDateString();
-      document.getElementById('time').innerHTML = date.toLocaleTimeString();
-    }, 1000);
+    <script language="javascript" type="text/javascript" src="time.js">
+    </script>
+    <script src="script.js">
+
     </script>
 </body>
 </html>

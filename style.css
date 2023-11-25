@@ -32,7 +32,7 @@ header{
     display:flex;
     margin-top:20px;
     font-size: 20px;
-    margin-left:440px;
+    margin-left:900px;
 }
 
 .menu span{
@@ -113,6 +113,7 @@ footer .menu{
 .menu-btn {
 	width: 36px;
 	height: 36px;
+    margin-left: 20px;
 	position: relative;
 	z-index:2;
 	overflow: hidden;
@@ -134,3 +135,62 @@ footer .menu{
 .menu-btn span:nth-of-type(3) {
 	top: calc(50% + 5px);
 }
+.layout-menu{
+    background-color: white;
+    width:300px;
+    height:100vh;
+    display:none;
+    margin-left: 1000px;
+    position: absolute;
+    right: 0;
+}
+.headofcontent{
+    margin-bottom: 20px;
+}
+.position{
+    display:flex;
+    margin-bottom:15px;
+    margin-left:10px;
+}
+#fposition{
+    margin-bottom:30px;
+    margin-left:10px;
+    margin-top:4px;
+}
+
+
+#parent_popup {
+    display:none;
+    background: #000;
+    height: 100%;
+    opacity: 0.9;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    left: 0;
+  }
+  #popup {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: white;
+    height: 440px;
+    position: fixed;
+    top: 100px;
+    left: 40%;
+    color: black;
+    width: 500px;
+    border-radius: 5%;
+  }
+  .popup-cross{
+    width:30px;
+    height:30px;
+    margin-top:20px;
+    margin-left:450px;
+    background-image: url("https://cdn4.iconfinder.com/data/icons/user-interface-765/100/Close-1024.png");
+    background-repeat: no-repeat;  
+    background-size: cover;
+  }
+  h3{
+    margin-top:20px;
+    margin-left:100px;
+  }
