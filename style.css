@@ -6,6 +6,49 @@ body{
     background-size: cover;
     font-family: 'Roboto', sans-serif;
 }
+.tablo{
+    display:none;
+    background-color: rgb(256, 256, 256);
+    height: 100vh;
+}
+.big{
+    font-size:60px;
+}
+.position:hover{
+    color:rgb(78, 181, 250);
+}
+span:hover {
+    cursor: pointer;
+    color:rgb(78, 181, 250);
+}
+
+
+summary {
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em;
+}
+
+details[open] {
+    padding: 0.5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 0.5em;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.directions{
+    margin-top:10px;
+}
+
+
+.position:hover {
+    cursor: pointer;
+}
 .logo{
     width:200px;
     height:50px;
@@ -33,7 +76,7 @@ header{
     display:flex;
     margin-top:20px;
     font-size: 20px;
-    margin-left:62%;
+    margin-left:56%;
 }
 
 .menu span{

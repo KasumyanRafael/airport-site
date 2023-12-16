@@ -1,4 +1,17 @@
-document.querySelector(".menu-btn").addEventListener("click",function(){
+document.querySelector("#menu").addEventListener("click",function(){
     document.querySelector("#headmenu").style.display='none';
     document.querySelector(".layout-menu").style.display='block';
+})
+document.querySelector("#routes").addEventListener("click",function(){
+    document.querySelector(".tablo").style.display='block';
+})
+document.querySelector(".closespan").addEventListener("click",function(){
+    document.querySelector(".layout-menu").style.display='none';
+    document.querySelector(".menu").style.display='block';
+})
+document.querySelector("#routes2").addEventListener("click",function(){
+    document.querySelector(".tablo").style.display='block';
+})
+document.querySelector("#routes3").addEventListener("click",function(){
+    document.querySelector(".tablo").style.display='block';
 })
