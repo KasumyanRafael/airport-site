@@ -18,6 +18,10 @@
                 <img src="OGZ_logo_png.png" alt="Логотип">
             </div>
         </a>
+        <div class="datetime" style="font-size: 20px; display:grid;margin-left:10%;">
+            <strong id="date" ></strong>
+            <strong id="time" >Время</strong>
+        </div>
         <div class="menu" id="headmenu">
             <span id="routes">Рейсы</span>
             <span>Услуги</span>
@@ -130,7 +134,7 @@
                     <td>Москва (Шереметьево)</td> 
                     <td>10:30</td> 
                     <td>10:30</td> 
-                    <td>1</td> 
+                    <td>2</td> 
                     <td>По расписанию</td> 
                 </tr> 
                 <tr id="flight1" style="display: none"> 
@@ -157,7 +161,7 @@
                     <td>Москва (Домодедово)</td> 
                     <td>16:40</td> 
                     <td>16:40</td> 
-                    <td>2</td> 
+                    <td>1</td> 
                     <td>По расписанию</td>
                 </tr> 
                 <tr id="flight2" style="display: none"> 
@@ -182,19 +186,15 @@
             </table>
         </div>
     </div>
-    <footer>
+    <footer class="dep-arr">
         <div class="menu">
-            <div>
-                <span id="routes3">Вылет</span>
+            <div id="dep" style="display:grid">
+                <strong id="routes3">Вылет</strong>
                 <span style="font-size: 20px;">Вылетающим</span>
             </div>
-            <div>
-                <span>Прилёт</span>
+            <div id="arr" style="display:grid">
+                <strong id="routes4">Прилёт</strong>
                 <span style="font-size: 20px;">Прибывающим</span>
-            </div>
-            <div class="datetime" style="font-size: 26px; display:grid;margin-left:60%;margin-bottom:2%;">
-                <span id="date" style="background-color: white;"></span>
-                <span id="time" style="background-color: white;">Время</span>
             </div>
         </div>
     </footer>

@@ -23,27 +23,7 @@ span:hover {
 }
 
 
-summary {
-    font-weight: bold;
-    margin: -0.5em -0.5em 0;
-    padding: 0.5em;
-}
 
-details[open] {
-    padding: 0.5em;
-}
-
-details[open] summary {
-    border-bottom: 1px solid #aaa;
-    margin-bottom: 0.5em;
-}
-a{
-    text-decoration: none;
-    color:black;
-}
-.directions{
-    margin-top:10px;
-}
 
 
 .position:hover {
@@ -76,7 +56,7 @@ header{
     display:flex;
     margin-top:20px;
     font-size: 20px;
-    margin-left:56%;
+    margin-left:36%;
 }
 
 .menu span{
@@ -141,7 +121,6 @@ header{
     display: block;
 }
 footer {
-    background-color: white;
     position: absolute;
     display:flex;
     left: 0;
@@ -255,4 +234,12 @@ footer .menu{
     margin-left:85%;
     margin-right: 4%;
     display:none;
+}
+#routes3:hover{
+    color:rgb(78, 181, 250);
+    cursor: pointer;
+}
+#routes4:hover{
+    color:rgb(78, 181, 250);
+    cursor: pointer;
 }

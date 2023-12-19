@@ -11,17 +11,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="body_personnel">
-    <header style="height:100px">
+    <header>
         <a href="personnel.html">
             <div class="logo">
                 <img src="OGZ_logo_png.png" alt="Логотип">
             </div>
         </a>
-        <div class="menu" id="headmenu" style="margin-left: 40%;">
-            <div  style="font-size: 22px;margin-left:60%;margin-bottom:2%;">
-                <span id="time" style="background-color: white;">Время</span>
-                <small id="date" style="background-color: white;"></small>
-            </div>
+        <div class="datetime" style="font-size: 20px; display:grid;margin-left:10%;margin-right:15%">
+            <strong id="date" ></strong>
+            <strong id="time" >Время</strong>
+        </div>
+        <div class="menu" id="headmenu">
             <div class="dropdown">
                 <div class="dropbtn">Ru</div>
                 <div class="dropdown-content">
@@ -29,14 +29,14 @@
                   <a href="#">En</a>
                 </div>
             </div>
-            <div class="personnel_entrance">
-                Вход 
-            </div>
+            <span class="personnel_entrance">
+                Вход
+            </span>
         </div>
     </header>
     <main>
         <div class="personnel_reg">
-            <small onclick="hideForm()" style="margin-left:60%">Скрыть</small>
+            <small onclick="hideForm()" style="margin-left:60%;cursor:pointer">Скрыть</small>
             <form>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email</label>

@@ -4,6 +4,7 @@ document.querySelector("#menu").addEventListener("click",function(){
 })
 document.querySelector("#routes").addEventListener("click",function(){
     document.querySelector(".tablo").style.display='block';
+    document.querySelector(".dep-arr").style.display='none';
 })
 document.querySelector(".closespan").addEventListener("click",function(){
     document.querySelector(".layout-menu").style.display='none';
@@ -11,7 +12,13 @@ document.querySelector(".closespan").addEventListener("click",function(){
 })
 document.querySelector("#routes2").addEventListener("click",function(){
     document.querySelector(".tablo").style.display='block';
+    document.querySelector(".dep-arr").style.display='none';
 })
 document.querySelector("#routes3").addEventListener("click",function(){
     document.querySelector(".tablo").style.display='block';
+    document.querySelector(".dep-arr").style.display='none';
+})
+document.querySelector("#routes4").addEventListener("click",function(){
+    document.querySelector(".tablo").style.display='block';
+    document.querySelector(".dep-arr").style.display='none';
 })
