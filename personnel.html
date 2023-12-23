@@ -51,9 +51,29 @@
                     <label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
                 </div>
                 <button type="submit" class="btn btn-primary">Войти</button>
-                <button type="button" class="btn btn-info" id="info_reg_personnel">Как получить доступ</button>
+                <!--<button type="button" class="btn btn-info" id="info_reg_personnel">Как получить доступ</button>-->
+                <button type="button" class="btn btn-info" onclick="document.getElementById('myModal').style.display='block'">Регистрация</button>
             </form>
         </div>
+        <!-- Модальное окно -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                 <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+                 <h2>Регистрация</h2>
+                 <!-- Содержимое модального окна с формой регистрации -->
+                 <!-- Здесь можно разместить HTML-код для формы регистрации -->
+            </div>
+        </div>
+
+        <script>
+        // Закрывать модальное окно при щелчке вне его
+            window.onclick = function(event) {
+                var modal = document.getElementById('myModal');
+                if (event.target === modal) {
+                   modal.style.display = 'none';
+                }
+            }
+        </script>
     </main>
     <script language="javascript" type="text/javascript" src="time.js">
     </script>
