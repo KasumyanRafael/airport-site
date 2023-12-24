@@ -261,10 +261,11 @@ footer .menu{
 /* Стили для содержимого модального окна */
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* Выравниваем модальное окно по центру */
+    margin: 10% auto; /* Выравниваем модальное окно по центру */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 20%;
+    height:40%;
     max-width: 600px;
 }
 

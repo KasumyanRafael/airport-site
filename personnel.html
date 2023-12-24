@@ -58,10 +58,57 @@
         <!-- Модальное окно -->
         <div id="myModal" class="modal">
             <div class="modal-content">
-                 <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-                 <h2>Регистрация</h2>
-                 <!-- Содержимое модального окна с формой регистрации -->
-                 <!-- Здесь можно разместить HTML-код для формы регистрации -->
+                 <span style="margin-left:90%"class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+                 <div class="regcontainer" style="display:block">
+                    <h4>Регистрация: шаг 1</h4>
+                    <br>
+                    <h6>Введите ваши паспортные данные</h6>
+                    <form action="">
+                       <input type="text" id="name" style="margin-top:6px" placeholder="Введите имя" required>
+                       <br>
+                       <input type="text" id="surname" style="margin-top:6px" placeholder="Введите фамилию" required>
+                       <br>
+                       <input type="text" id="seria" style="margin-top:6px" placeholder="Введите серию паспорта" required>
+                       <br>
+                       <input type="text" id="number" style="margin-top:6px" placeholder="Введите номер паспорта" required>
+                    </form>
+                    <div style="display:flex; margin-top:20px">
+                        <button type="button" class="btn btn-light" disabled style="margin-right:5%">Назад</button>
+                        <button type="button" class="btn btn-primary" disabled style="margin-right:5%">Завершить</button>
+                        <button type="button" class="btn btn-light" style="margin-right:5%">Вперёд</button>
+                    </div>
+                 </div>
+                 <div class="regcontainer" style="display:none">
+                    <h4>Регистрация: шаг 2</h4>
+                    <br>
+                    <h6>Введите ваши персональные данные</h6>
+                    <form action="">
+                        <label for="gender" style="margin-top:10px">Выберите пол:</label>
+                        <select id="gender" name="gender">
+                            <option value="male">Мужской</option>
+                            <option value="female">Женский</option>
+                        </select>
+                       <br>
+                       <label for="prof">Выберите отдел:</label>
+                        <select id="prof" name="prof">
+                            <option value="male">Касса</option>
+                            <option value="female">Регистрация</option>
+                            <option value="female">Услуги</option>
+                            <option value="female">Расписание</option>
+                        </select>
+                       <br>
+                       <label for="email">Введите email:</label>
+                       <input type="email" id="email" style="margin-top:6px" placeholder="ivanov@mail.ru" required>
+                       <br>
+                       <label for="phone">Номер телефона:</label>
+                       <input type="tel" id="phone" name="phone" pattern="^\+7[0-9]{10}$" placeholder="+7XXXXXXXXXX" required>
+                    </form>
+                    <div style="display:flex; margin-top:20px">
+                        <button type="button" class="btn btn-light" style="margin-right:5%">Назад</button>
+                        <button type="button" class="btn btn-primary" disabled style="margin-right:5%">Завершить</button>
+                        <button type="button" class="btn btn-light" style="margin-right:5%">Вперёд</button>
+                    </div>
+                 </div>
             </div>
         </div>
 
